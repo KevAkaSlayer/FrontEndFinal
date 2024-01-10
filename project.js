@@ -43,12 +43,12 @@ const showsort = async () => {
     if (!descending) {
         arr.sort((a, b) => viewnum(b.others.views) - viewnum(a.others.views));
         descending = true;
-        sortbtn.innerText = 'Sort by views(Asc)';
+        sortbtn.innerText = 'Sort by views(Desc)';
     }
     else {
         arr.sort((a, b) => viewnum(a.others.views) - viewnum(b.others.views));
         descending = false;
-        sortbtn.innerText = 'Sort by views(Desc)';
+        sortbtn.innerText = 'Sort by views(Asc)';
     }
     showcategorydata(arr);
 
