@@ -84,7 +84,7 @@ function showcategorydata(data) {
                     <div class="time"> ${element.others.posted_date ? `${hrs} hours ${mins} min ago` : ""}  
                     </div>
                 
-                <div class="author d-flex gap-3 pt-4 ">
+                <div class="author flex gap-3 pt-4 ">
                 <img class="authph " src="${element.authors[0].profile_picture}" alt="">
                     <div class="authortextdiv">
                         <h1 class="name">${element.title}</h1> 
